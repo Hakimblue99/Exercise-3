@@ -1,0 +1,27 @@
+public class Runnable {
+  
+    public static void main(String[] args)
+    {
+       string sentence[]=new string[7];
+       sentence[0]="It";//initialization  
+       sentence[1]="is";  
+       sentence[2]="recommended";  
+       sentence[3]="to";  
+       sentence[4]="use";
+       sentence[5]="Calender";
+       sentence[6]="class.";
+    }
+  
+     Thread timeThread1 = new Thread("11:00");
+        Thread nameThread2 = new Thread("Exercise");
+        timeThread1.start();
+        nameThread2.start();
+        System.out.println("Current time is:");
+        System.out.println(timeThread1.getName());
+        System.out.println("Name of thread is:");
+        System.out.println(nameThread2.getName());
+    }
+    @Override
+    public void run() {
+    }
+}
